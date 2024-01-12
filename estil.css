@@ -1,0 +1,305 @@
+/* estils de la pagina */
+body {
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+}
+
+/* header estil */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 10px 20px;
+    background-image: url('dos-hombres-esquiando-montana-abajo-invierno-generado-ia.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 150px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 45px;
+    text-align: center;
+    box-shadow: -1px 0px 5px 5px rgba(0,0,0,1);
+    animation: apreixer 2s ease-in-out;
+}
+
+@keyframes apreixer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.subtitul-header{
+   color: whitesmoke;
+   transition: color 0.3s;
+}
+.subtitul-header:hover{
+    color: #567797;
+    cursor: pointer;
+}
+/* Estil del menu principal */
+ .menu {
+    position: absolute; 
+    top: 10px; 
+    right: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    box-shadow: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 20px; 
+}
+
+.menu a:hover {
+    color: #ccc;
+} 
+
+/* Estil del contigut principal  */
+.contingut {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* seccio sobre esqui  */
+.sobre-esqui {
+    margin-bottom: 250px; 
+}
+.sobre-esqui img {
+    float: right; 
+    max-width: 50%;
+    height: auto;
+  
+}
+
+.sobre-esqui p {
+    float: left; 
+    max-width: 50%;
+    margin: 50px; 
+    text-align: justify;
+    text-align-last: justify ;
+}
+
+.sobre-esqui::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* estil pel h2,h3 i p  */
+.contingut h2 {
+    color: #d0342c; 
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.contingut h3 {
+    color: #333;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contingut p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* estils per la galeria */
+
+.contingut .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 250px;
+}
+.contingut .galeria img,
+.contingut .galeria video {
+    max-width: 300px; 
+    max-height: 250px; 
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.contingut .galeria video {
+    object-fit: cover;
+}
+
+.contingut .galeria h2 {
+    grid-column: 1 / -1;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contingut .galeria p {
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    text-decoration: underline;
+    text-decoration-color: pink;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    text-decoration: underline;
+    text-decoration-color: pink;
+}
+
+.contingut .galeria img:hover,
+.contingut .galeria video:hover {
+    transform: scale(1.1);
+}
+
+
+/* estil per la seccio pistes */
+.pistes {
+    margin-bottom: 50px; 
+}
+
+.pistes div {
+    clear: both; 
+    margin-bottom: 350px; 
+    
+}
+
+.pistes p {
+    float: right; 
+    width: 50%; 
+    margin: 0; 
+    text-align: justify;
+    
+}
+
+.pistes img {
+    float: left; 
+    max-width: 30%; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+
+.pistes h3 {
+    color: blue; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+/* Estil per la seccio ENLLAÇ */
+.contingut .enlaces-interes {
+    margin-bottom: 250px; 
+}
+.contingut .enlaces-interes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contingut .enlaces-interes li {
+    margin-bottom: 10px;
+}
+
+.contingut .enlaces-interes a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contingut .enlaces-interes a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* peu de pagina */
+.peu-pagina {
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding: 50px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.peu-pagina p {
+    margin: 5px 0; 
+    font-size: 26px; 
+}
+
+
+/* Estils del segon menu deesplagable */
+.menu2 {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    background-color: lightblue;
+    padding: 10px;
+    display: none;
+}
+
+.menu2 ul {
+    
+    margin: 0;
+    padding: 0;
+}
+
+.menu2 li {
+    margin-left: 15px;
+    display: inline;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.desplasat .menu2 {
+    display: block;
+}
+
